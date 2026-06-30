@@ -1,0 +1,39 @@
+baseURL = 'https://macpulse-au.github.io/'
+languageCode = 'en-au'
+title = 'Mac Pulse'
+theme = 'paper'
+publishDir = 'public'
+
+[params]
+  description = 'Daily Mac news, analysis and deals from Australia'
+  defaultTheme = 'auto'
+  showFullContent = false
+  showWordCounts = true
+
+[params.author]
+  name = 'Mac Pulse Team'
+
+[outputs]
+  home = ['HTML', 'RSS']
+
+[menu]
+  [[menu.main]]
+    identifier = 'home'
+    name = 'Home'
+    url = '/'
+    weight = 1
+  [[menu.main]]
+    identifier = 'news'
+    name = 'News'
+    url = '/blog/'
+    weight = 2
+  [[menu.main]]
+    identifier = 'deals'
+    name = 'Deals'
+    url = '/tags/deals/'
+    weight = 3
+  [[menu.main]]
+    identifier = 'about'
+    name = 'About'
+    url = '/about/'
+    weight = 4

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Blogs on Mac Pulse</title>
+		<link>https://macpulse-au.github.io/blog/</link>
+		<description>Recent content in Blogs on Mac Pulse</description>
+		<generator>Hugo</generator>
+		<language>en-au</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 30 Jun 2026 09:00:00 +1000</lastBuildDate>
+		
+			<atom:link href="https://macpulse-au.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Mac Studio M3 Ultra with 512GB RAM — Is the $19,490 Price Tag Justified?</title>
+				<link>https://macpulse-au.github.io/blog/2026-06-30-mac-studio-m3-ultra-512gb-ram-worth-the-premium/</link>
+				<pubDate>Tue, 30 Jun 2026 09:00:00 +1000</pubDate>
+				<guid>https://macpulse-au.github.io/blog/2026-06-30-mac-studio-m3-ultra-512gb-ram-worth-the-premium/</guid>
+				<description>Apple&amp;rsquo;s most powerful Mac desktop ships with up to 512GB unified memory. We break down who actually needs this beast and whether the price makes sense for Australian buyers.</description>
+			</item>
+	</channel>
+</rss>
