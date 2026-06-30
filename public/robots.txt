@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://clawdbruno.github.io/sitemap.xml
