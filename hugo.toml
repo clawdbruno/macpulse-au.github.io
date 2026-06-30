@@ -1,5 +1,5 @@
-baseURL = 'https://clawdbruno.github.io/macpulse-au.github.io/'
-languageCode = 'en-au'
+baseURL = 'https://clawdbruno.github.io/'
+locale = 'en-au'
 title = 'Mac Pulse'
 theme = 'macpulse'
 publishDir = 'public'
