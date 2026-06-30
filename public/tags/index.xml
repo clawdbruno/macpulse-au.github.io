@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Tags on Mac Pulse</title>
-		<link>https://macpulse-au.github.io/tags/</link>
+		<link>https://clawdbruno.github.io/macpulse-au.github.io/tags/</link>
 		<description>Recent content in Tags on Mac Pulse</description>
 		<generator>Hugo</generator>
 		<language>en-au</language>
@@ -12,33 +12,33 @@
 		
 			<lastBuildDate>Tue, 30 Jun 2026 09:00:00 +1000</lastBuildDate>
 		
-			<atom:link href="https://macpulse-au.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://clawdbruno.github.io/macpulse-au.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Analysis</title>
-				<link>https://macpulse-au.github.io/tags/analysis/</link>
+				<link>https://clawdbruno.github.io/macpulse-au.github.io/tags/analysis/</link>
 				<pubDate>Tue, 30 Jun 2026 09:00:00 +1000</pubDate>
-				<guid>https://macpulse-au.github.io/tags/analysis/</guid>
+				<guid>https://clawdbruno.github.io/macpulse-au.github.io/tags/analysis/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Australia</title>
-				<link>https://macpulse-au.github.io/tags/australia/</link>
+				<link>https://clawdbruno.github.io/macpulse-au.github.io/tags/australia/</link>
 				<pubDate>Tue, 30 Jun 2026 09:00:00 +1000</pubDate>
-				<guid>https://macpulse-au.github.io/tags/australia/</guid>
+				<guid>https://clawdbruno.github.io/macpulse-au.github.io/tags/australia/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>M3-Ultra</title>
-				<link>https://macpulse-au.github.io/tags/m3-ultra/</link>
+				<link>https://clawdbruno.github.io/macpulse-au.github.io/tags/m3-ultra/</link>
 				<pubDate>Tue, 30 Jun 2026 09:00:00 +1000</pubDate>
-				<guid>https://macpulse-au.github.io/tags/m3-ultra/</guid>
+				<guid>https://clawdbruno.github.io/macpulse-au.github.io/tags/m3-ultra/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Mac-Studio</title>
-				<link>https://macpulse-au.github.io/tags/mac-studio/</link>
+				<link>https://clawdbruno.github.io/macpulse-au.github.io/tags/mac-studio/</link>
 				<pubDate>Tue, 30 Jun 2026 09:00:00 +1000</pubDate>
-				<guid>https://macpulse-au.github.io/tags/mac-studio/</guid>
+				<guid>https://clawdbruno.github.io/macpulse-au.github.io/tags/mac-studio/</guid>
 				<description></description>
 			</item>
 	</channel>

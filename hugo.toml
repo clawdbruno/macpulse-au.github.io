@@ -1,17 +1,18 @@
-baseURL = 'https://macpulse-au.github.io/'
+baseURL = 'https://clawdbruno.github.io/macpulse-au.github.io/'
 languageCode = 'en-au'
 title = 'Mac Pulse'
-theme = 'paper'
+theme = 'macpulse'
 publishDir = 'public'
 
 [params]
   description = 'Daily Mac news, analysis and deals from Australia'
-  defaultTheme = 'auto'
+  defaultTheme = 'dark'
   showFullContent = false
   showWordCounts = true
+  twitter = 'macpulse'
 
 [params.author]
-  name = 'Mac Pulse Team'
+  name = 'Mac Pulse'
 
 [outputs]
   home = ['HTML', 'RSS']

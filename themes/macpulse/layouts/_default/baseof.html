@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{ partial "head.html" . }}
+
+<body>
+  {{ partial "nav.html" . }}
+
+  <main class="main-content">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  {{ partial "footer.html" . }}
+
+  <script>
+    // Dark mode toggle
+    const toggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+    const saved = localStorage.getItem('theme');
+    if (saved) { html.classList.add(saved); }
+    else if (window.matchMedia('(prefers-color-scheme: dark)').matches) { html.classList.add('dark'); }
+    if (toggle) {
+      toggle.addEventListener('click', () => {
+        html.classList.toggle('dark');
+        localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+      });
+    }
+
+    // Mobile nav toggle
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('navLinks');
+    if (burger && navLinks) {
+      burger.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+        burger.classList.toggle('active');
+      });
+    }
+  </script>
+</body>
+</html>

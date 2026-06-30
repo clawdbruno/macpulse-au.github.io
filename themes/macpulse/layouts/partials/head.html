@@ -1,0 +1,23 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ if .IsPage }}{{ .Summary }}{{ else }}{{ site.Params.description }}{{ end }}">
+
+  {{- $title := cond (ne .Title site.Title) (printf "%s — %s" .Title site.Title) site.Title -}}
+  <title>{{ $title }}</title>
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/index.xml">
+
+  <meta name="theme-color" content="#0071e3">
+  <meta name="apple-mobile-web-app-title" content="Mac Pulse">
+
+  {{ if .OutputFormats.Get "RSS" }}
+    {{ range .OutputFormats }}
+      {{ if eq .Name "RSS" }}
+        <link rel="alternate" type="application/rss+xml" title="{{ site.Title }}" href="{{ .Permalink }}">
+      {{ end }}
+    {{ end }}
+  {{ end }}
+</head>
