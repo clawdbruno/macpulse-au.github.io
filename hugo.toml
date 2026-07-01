@@ -5,7 +5,7 @@ theme = 'macpulse'
 publishDir = 'public'
 
 [params]
-  description = 'Daily Mac news, analysis and deals from Australia'
+  description = 'Daily Mac news, gaming, analysis and deals from Australia'
   defaultTheme = 'dark'
   showFullContent = false
   showWordCounts = true
@@ -29,12 +29,17 @@ publishDir = 'public'
     url = '/blog/'
     weight = 2
   [[menu.main]]
+    identifier = 'gaming'
+    name = 'Gaming'
+    url = '/tags/mac-gaming/'
+    weight = 3
+  [[menu.main]]
     identifier = 'deals'
     name = 'Deals'
     url = '/tags/deals/'
-    weight = 3
+    weight = 4
   [[menu.main]]
     identifier = 'about'
     name = 'About'
     url = '/about/'
-    weight = 4
+    weight = 5

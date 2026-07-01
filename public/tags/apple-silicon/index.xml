@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Apple-Silicon on Mac Pulse</title>
+		<link>https://clawdbruno.github.io/tags/apple-silicon/</link>
+		<description>Recent content in Apple-Silicon on Mac Pulse</description>
+		<generator>Hugo</generator>
+		<language>en-au</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 01 Jul 2026 12:00:00 +1000</lastBuildDate>
+		
+			<atom:link href="https://clawdbruno.github.io/tags/apple-silicon/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Which Mac Actually Handles Gaming in 2026? Hardware Showdown</title>
+				<link>https://clawdbruno.github.io/blog/2026-07-01-mac-gaming-hardware-showdown-2026/</link>
+				<pubDate>Wed, 01 Jul 2026 12:00:00 +1000</pubDate>
+				<guid>https://clawdbruno.github.io/blog/2026-07-01-mac-gaming-hardware-showdown-2026/</guid>
+				<description>Not all Macs are equal for gaming. We rank every current Apple Silicon Mac for gaming performance and value.</description>
+			</item>
+			<item>
+				<title>Best Native Mac Games Worth Playing in 2026 — No Crossover Needed</title>
+				<link>https://clawdbruno.github.io/blog/2026-07-01-best-native-mac-gaming-2026/</link>
+				<pubDate>Wed, 01 Jul 2026 11:00:00 +1000</pubDate>
+				<guid>https://clawdbruno.github.io/blog/2026-07-01-best-native-mac-gaming-2026/</guid>
+				<description>Apple Silicon has unlocked native gaming on Mac. Here are the best titles you can run right now without any compatibility layer.</description>
+			</item>
+	</channel>
+</rss>

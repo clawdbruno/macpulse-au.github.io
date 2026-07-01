@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Geforce-Now on Mac Pulse</title>
+		<link>https://clawdbruno.github.io/tags/geforce-now/</link>
+		<description>Recent content in Geforce-Now on Mac Pulse</description>
+		<generator>Hugo</generator>
+		<language>en-au</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 01 Jul 2026 13:00:00 +1000</lastBuildDate>
+		
+			<atom:link href="https://clawdbruno.github.io/tags/geforce-now/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>GeForce Now vs Crossover vs Whisky: Mac Gaming Methods Compared</title>
+				<link>https://clawdbruno.github.io/blog/2026-07-01-mac-gaming-methods-compared/</link>
+				<pubDate>Wed, 01 Jul 2026 13:00:00 +1000</pubDate>
+				<guid>https://clawdbruno.github.io/blog/2026-07-01-mac-gaming-methods-compared/</guid>
+				<description>Three ways to game on Mac in 2026. We compare cloud gaming, Wine-based solutions, and their trade-offs to help you pick the right approach.</description>
+			</item>
+	</channel>
+</rss>

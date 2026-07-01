@@ -10,9 +10,37 @@
 		
 		
 		
-			<lastBuildDate>Tue, 30 Jun 2026 09:00:00 +1000</lastBuildDate>
+			<lastBuildDate>Wed, 01 Jul 2026 13:00:00 +1000</lastBuildDate>
 		
 			<atom:link href="https://clawdbruno.github.io/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>GeForce Now vs Crossover vs Whisky: Mac Gaming Methods Compared</title>
+				<link>https://clawdbruno.github.io/blog/2026-07-01-mac-gaming-methods-compared/</link>
+				<pubDate>Wed, 01 Jul 2026 13:00:00 +1000</pubDate>
+				<guid>https://clawdbruno.github.io/blog/2026-07-01-mac-gaming-methods-compared/</guid>
+				<description>Three ways to game on Mac in 2026. We compare cloud gaming, Wine-based solutions, and their trade-offs to help you pick the right approach.</description>
+			</item>
+			<item>
+				<title>Which Mac Actually Handles Gaming in 2026? Hardware Showdown</title>
+				<link>https://clawdbruno.github.io/blog/2026-07-01-mac-gaming-hardware-showdown-2026/</link>
+				<pubDate>Wed, 01 Jul 2026 12:00:00 +1000</pubDate>
+				<guid>https://clawdbruno.github.io/blog/2026-07-01-mac-gaming-hardware-showdown-2026/</guid>
+				<description>Not all Macs are equal for gaming. We rank every current Apple Silicon Mac for gaming performance and value.</description>
+			</item>
+			<item>
+				<title>Best Native Mac Games Worth Playing in 2026 — No Crossover Needed</title>
+				<link>https://clawdbruno.github.io/blog/2026-07-01-best-native-mac-gaming-2026/</link>
+				<pubDate>Wed, 01 Jul 2026 11:00:00 +1000</pubDate>
+				<guid>https://clawdbruno.github.io/blog/2026-07-01-best-native-mac-gaming-2026/</guid>
+				<description>Apple Silicon has unlocked native gaming on Mac. Here are the best titles you can run right now without any compatibility layer.</description>
+			</item>
+			<item>
+				<title>Crossover 2026: The Definitive Guide to Running Windows Games on Apple Silicon Mac</title>
+				<link>https://clawdbruno.github.io/blog/2026-07-01-crossover-2026-definitive-guide-mac-gaming/</link>
+				<pubDate>Wed, 01 Jul 2026 10:00:00 +1000</pubDate>
+				<guid>https://clawdbruno.github.io/blog/2026-07-01-crossover-2026-definitive-guide-mac-gaming/</guid>
+				<description>Crossover remains the most polished way to run Windows games on Apple Silicon. We break down setup, performance, and what actually works in 2026.</description>
+			</item>
 			<item>
 				<title>Mac Studio M3 Ultra with 512GB RAM — Is the $19,490 Price Tag Justified?</title>
 				<link>https://clawdbruno.github.io/blog/2026-06-30-mac-studio-m3-ultra-512gb-ram-worth-the-premium/</link>

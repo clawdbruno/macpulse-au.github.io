@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Game-Porting on Mac Pulse</title>
+		<link>https://clawdbruno.github.io/tags/game-porting/</link>
+		<description>Recent content in Game-Porting on Mac Pulse</description>
+		<generator>Hugo</generator>
+		<language>en-au</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 01 Jul 2026 10:00:00 +1000</lastBuildDate>
+		
+			<atom:link href="https://clawdbruno.github.io/tags/game-porting/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Crossover 2026: The Definitive Guide to Running Windows Games on Apple Silicon Mac</title>
+				<link>https://clawdbruno.github.io/blog/2026-07-01-crossover-2026-definitive-guide-mac-gaming/</link>
+				<pubDate>Wed, 01 Jul 2026 10:00:00 +1000</pubDate>
+				<guid>https://clawdbruno.github.io/blog/2026-07-01-crossover-2026-definitive-guide-mac-gaming/</guid>
+				<description>Crossover remains the most polished way to run Windows games on Apple Silicon. We break down setup, performance, and what actually works in 2026.</description>
+			</item>
+	</channel>
+</rss>
