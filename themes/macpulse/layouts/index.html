@@ -2,10 +2,40 @@
 <section class="hero">
   <div class="container">
     <h1 class="hero-title">Mac news that cuts through the noise</h1>
-    <p class="hero-subtitle">Daily research, original analysis, and Australian deals. No fluff, no press releases.</p>
+    <p class="hero-subtitle">Daily research, original analysis, gaming coverage, and Australian deals. No fluff, no press releases.</p>
   </div>
 </section>
 
+<!-- Featured Gaming Section -->
+{{ $gamingPages := where site.RegularPages "Type" "blog" }}
+{{ $gamingPages := where $gamingPages "Params.tags" "intersect" (slice "mac-gaming") }}
+{{ if $gamingPages }}
+<section class="container section gaming-section">
+  <div class="section-header">
+    <h2>🎮 Mac Gaming</h2>
+    <a href="/tags/mac-gaming/" class="view-all">View all &rarr;</a>
+  </div>
+  <div class="post-grid">
+    {{ range first 4 $gamingPages }}
+      <article class="post-card">
+        <div class="post-card-inner">
+          <span class="post-date">{{ .Date.Format "2 Jan 2006" }}</span>
+          <h3 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+          <p class="post-summary">{{ .Summary }}</p>
+          <div class="post-meta">
+            {{ range .Params.tags }}
+              <span class="tag"><a href="/tags/{{ . | urlize }}/">  {{ . }}</a></span>
+            {{ end }}
+            <span class="read-time">{{ .WordCount }} words</span>
+          </div>
+        </div>
+      </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+<!-- Latest Section -->
 <section class="container section">
   <div class="section-header">
     <h2>Latest</h2>
@@ -21,7 +51,7 @@
           <p class="post-summary">{{ .Summary }}</p>
           <div class="post-meta">
             {{ range .Params.tags }}
-              <span class="tag"><a href="/tags/{{ . | urlize }}/">{{ . }}</a></span>
+              <span class="tag"><a href="/tags/{{ . | urlize }}/">  {{ . }}</a></span>
             {{ end }}
             <span class="read-time">{{ .WordCount }} words</span>
           </div>

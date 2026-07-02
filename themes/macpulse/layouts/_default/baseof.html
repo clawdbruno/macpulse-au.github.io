@@ -35,6 +35,78 @@
         burger.classList.toggle('active');
       });
     }
+
+    // Search overlay
+    const searchToggle = document.getElementById('searchToggle');
+    const searchOverlay = document.getElementById('searchOverlay');
+    const searchInput = document.getElementById('searchInput');
+    const searchResults = document.getElementById('searchResults');
+    const searchClose = document.getElementById('searchClose');
+
+    if (searchToggle && searchOverlay) {
+      searchToggle.addEventListener('click', () => {
+        searchOverlay.classList.add('active');
+        if (searchInput) searchInput.focus();
+      });
+
+      searchClose.addEventListener('click', () => {
+        searchOverlay.classList.remove('active');
+        if (searchInput) searchInput.value = '';
+        if (searchResults) searchResults.innerHTML = '';
+      });
+
+      searchOverlay.addEventListener('click', (e) => {
+        if (e.target === searchOverlay) {
+          searchOverlay.classList.remove('active');
+          if (searchInput) searchInput.value = '';
+          if (searchResults) searchResults.innerHTML = '';
+        }
+      });
+
+      // Client-side search
+      if (searchInput && searchResults && window.ARTICLE_INDEX) {
+        searchInput.addEventListener('input', (e) => {
+          const query = e.target.value.toLowerCase().trim();
+          if (!query) {
+            searchResults.innerHTML = '';
+            return;
+          }
+
+          const matches = window.ARTICLE_INDEX.filter(article => {
+            return article.title.toLowerCase().includes(query) ||
+                   article.summary.toLowerCase().includes(query) ||
+                   article.tags.some(tag => tag.toLowerCase().includes(query));
+          });
+
+          if (matches.length === 0) {
+            searchResults.innerHTML = '<div class="search-empty">No results found</div>';
+            return;
+          }
+
+          searchResults.innerHTML = matches.map(article => `
+            <a href="${article.url}" class="search-result-item">
+              <div class="search-result-title">${article.title}</div>
+              <div class="search-result-meta">${article.date} · ${article.tags.slice(0, 3).join(' · ')}</div>
+            </a>
+          `).join('');
+        });
+
+        // Keyboard shortcut: Escape to close
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && searchOverlay.classList.contains('active')) {
+            searchOverlay.classList.remove('active');
+            if (searchInput) searchInput.value = '';
+            if (searchResults) searchResults.innerHTML = '';
+          }
+          // Cmd/Ctrl + K to open search
+          if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+            e.preventDefault();
+            searchOverlay.classList.add('active');
+            if (searchInput) searchInput.focus();
+          }
+        });
+      }
+    }
   </script>
 </body>
 </html>

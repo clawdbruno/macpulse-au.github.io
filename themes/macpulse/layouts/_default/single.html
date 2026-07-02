@@ -1,9 +1,12 @@
 {{ define "main" }}
+<!-- Reading Progress Bar -->
+<div class="progress-bar" id="progressBar"></div>
+
 <article class="container article">
   <header class="article-header">
     <div class="article-meta-top">
       <span class="post-date">{{ .Date.Format "2 January 2006" }}</span>
-      <span class="read-time">{{ .WordCount }} words</span>
+      <span class="read-time">{{ .WordCount }} words · {{ div (add .WordCount 250) 250 }} min read</span>
     </div>
     <h1 class="article-title">{{ .Title }}</h1>
     {{ if .Params.summary }}
@@ -11,18 +14,18 @@
     {{ end }}
     <div class="article-tags">
       {{ range .Params.tags }}
-        <span class="tag"><a href="/tags/{{ . | urlize }}/">{{ . }}</a></span>
+        <span class="tag"><a href="/tags/{{ . | urlize }}/">  {{ . }}</a></span>
       {{ end }}
     </div>
   </header>
 
-  <div class="article-body">
+  <div class="article-body" id="articleBody">
     {{ .Content }}
   </div>
 
   <footer class="article-footer">
     <hr>
-    <p>Thanks for reading. Get daily Mac news delivered to your inbox via <a href="/index.xml">RSS</a>.</p>
+    <p>Thanks for reading. Get daily Mac news delivered via <a href="/index.xml">RSS</a>.</p>
   </footer>
 
   {{ $related := site.RegularPages.Related . | first 3 }}
@@ -35,6 +38,7 @@
             <span class="post-date">{{ .Date.Format "2 Jan 2006" }}</span>
             <div class="post-content">
               <h3 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+              <p class="post-summary">{{ .Summary }}</p>
             </div>
           </article>
         {{ end }}
@@ -42,4 +46,38 @@
     </section>
   {{ end }}
 </article>
+
+<!-- Back to top button -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <polyline points="18 15 12 9 6 15"/>
+  </svg>
+</button>
+
+<script>
+// Reading progress bar
+const articleBody = document.getElementById('articleBody');
+const progressBar = document.getElementById('progressBar');
+if (articleBody && progressBar) {
+  window.addEventListener('scroll', () => {
+    const rect = articleBody.getBoundingClientRect();
+    const articleTop = rect.top + window.scrollY;
+    const articleHeight = rect.height;
+    const viewportHeight = window.innerHeight;
+    const scrolled = Math.max(0, Math.min(1, (window.scrollY - articleTop + viewportHeight * 0.3) / articleHeight));
+    progressBar.style.width = (scrolled * 100) + '%';
+  });
+}
+
+// Back to top button
+const backToTop = document.getElementById('backToTop');
+if (backToTop) {
+  window.addEventListener('scroll', () => {
+    backToTop.classList.toggle('visible', window.scrollY > 400);
+  });
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+</script>
 {{ end }}
